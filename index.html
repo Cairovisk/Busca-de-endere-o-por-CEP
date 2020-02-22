@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Busca CEP</title>
+    <!-- Pega font pelo Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Lilita+One&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- CSS local -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Formulário para input do CEP pelo usuário -->    
+    <form>
+        <div id="consultaCep" class="form-group box">
+            <label class="heading">Informe o CEP </label> 
+            <input type="text" id="inputCep" class="form-control" size="10" maxlength="9" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+            <small class="form-text text-muted">Insira o CEP usando apenas os números e clique no botão</small>
+          <button type="button" id="consultaBotao" class="btn btn-sm btn-success">Consultar CEP</button>
+          
+        </div>
+    <!-- div com o resultado do requerimento por CEP -->
+        <div id="resultadoDiv" class="box">
+            <div class="form-group">
+                <label >Logradouro: <input type="text" id="inputLogradouro" class="form-control" disabled></label>
+            </div>
+            <div class="form-group">
+                <label >Complemento: <input type="text" id="inputComplemento" class="form-control" disabled></label>
+            </div>
+            <div class="form-group">
+                <label >Bairro: <input type="text" id="inputBairro" class="form-control" disabled></label>
+            </div>
+            <div class="form-group">
+                <label >Localidade: <input type="text" id="inputLocalidade" class="form-control" disabled></label>
+            </div>
+            <div class="form-group">
+                <label >UF: <input type="text" id="inputUf" class="form-control" disabled></label>
+            </div>        
+        </div>
+        
+      </form>
+
+    
+    
+    <!-- CDN para JQuery e script app.js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
