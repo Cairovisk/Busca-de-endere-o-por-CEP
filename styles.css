@@ -1,27 +1,26 @@
 body {
   background-color: beige;
-  background-image: -webkit-linear-gradient(45deg, #32cd32 50%, beige 50%);
+  background-image: -webkit-linear-gradient(45deg, #228b22 50%, beige 50%);
   min-height: 1000px;
-  font-family: 'Lilita One';
+  font-family: "Lilita One";
 }
 
 button {
-    margin: 10px;
+  margin: 10px;
 }
 
 input {
-    max-width: 200px;
-    
+  max-width: 200px;
+  margin: 0 auto;
 }
 
-#consultaCep {
+.alinharTexto {
     text-align: center;
 }
 
 .heading {
-    font-size: 1.5rem;
-    font-weight: 200;
-    text-align: center;
+  font-size: 1.5rem;
+  font-weight: 200;
 }
 
 .box {
@@ -30,13 +29,11 @@ input {
   background: beige;
   border-radius: 5px;
   box-shadow: 5px 5px 15px -5px black;
+  padding: 10px;
 }
 
-#resultadoDiv {
-    
-}
 
-.infoCampos {
-    display: flex;
+.resultadoCampo {
+  max-width: 300px;
+  text-align: center;
 }
-

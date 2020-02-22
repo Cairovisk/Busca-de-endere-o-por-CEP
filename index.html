@@ -14,35 +14,44 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Formulário para input do CEP pelo usuário -->    
+    <div class="container-fluid">
+        <!-- Formulário para input do CEP pelo usuário -->    
     <form>
-        <div id="consultaCep" class="form-group box">
-            <label class="heading">Informe o CEP </label> 
-            <input type="text" id="inputCep" class="form-control" size="10" maxlength="9" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
-            <small class="form-text text-muted">Insira o CEP usando apenas os números e clique no botão</small>
-          <button type="button" id="consultaBotao" class="btn btn-sm btn-success">Consultar CEP</button>
+        <div id="consultaCep" class="form-group box alinharTexto">
+        <label class="heading">Informe o CEP </label> 
+        <input type="text" id="inputCep" class="form-control alinharTexto" size="10" maxlength="9" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+        <small class="form-text text-muted">Insira o CEP usando apenas os números e clique no botão</small>
+        <button type="button" id="consultaBotao" class="btn btn-sm btn-success">Consultar CEP</button>
           
         </div>
+    </form>
     <!-- div com o resultado do requerimento por CEP -->
-        <div id="resultadoDiv" class="box">
+        <div id="resultadoDiv" class="box alinharTexto">
             <div class="form-group">
-                <label >Logradouro: <input type="text" id="inputLogradouro" class="form-control" disabled></label>
+                <label >Logradouro: </label>
+                <input type="text" id="inputLogradouro" class="form-control resultadoCampo" disabled>
             </div>
             <div class="form-group">
-                <label >Complemento: <input type="text" id="inputComplemento" class="form-control" disabled></label>
+                <label >Complemento: </label>
+                <input type="text" id="inputComplemento" class="form-control resultadoCampo" disabled>
             </div>
             <div class="form-group">
-                <label >Bairro: <input type="text" id="inputBairro" class="form-control" disabled></label>
+                <label >Bairro: </label>
+                <input type="text" id="inputBairro" class="form-control resultadoCampo" disabled>
             </div>
             <div class="form-group">
-                <label >Localidade: <input type="text" id="inputLocalidade" class="form-control" disabled></label>
+                <label >Localidade: </label>
+                <input type="text" id="inputLocalidade" class="form-control resultadoCampo" disabled>
             </div>
             <div class="form-group">
-                <label >UF: <input type="text" id="inputUf" class="form-control" disabled></label>
+                <label >UF: </label>
+                <input type="text" id="inputUf" class="form-control resultadoCampo" disabled>
             </div>        
         </div>
+    </div>
+    
         
-      </form>
+      
 
     
     
