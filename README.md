@@ -10,7 +10,7 @@ Um arquivo compondo o código HTML, nomeado index.html, que interliga os outros 
 ## Configurações
 ### Ferramentas e bibliotecas
 - Linguagens: JavaScript e HTML
-- Bibliotecas: [Bootstrap](https://getbootstrap.com) e [JQuery](https://jquery.com), ambos importados no código por CDN
+- Bibliotecas e Frameworks: [Bootstrap](https://getbootstrap.com) e [JQuery](https://jquery.com), ambos importados no código por CDN
 - Ferramentas: CSS, AJAX e API
 
 ### Informações do sistema
